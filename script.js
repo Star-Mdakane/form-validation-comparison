@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // FP
 
-Pure validation functions
+//Pure validation functions
 const isRequired = (value) => value.trim() !== '' ? null : 'This field is required.';
 const minLength = (min) => (value) => value.length >= min ? null : `Must be at least ${min} characters long.`;
 const isValidEmail = (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) ? null : 'Please enter a valid email address.';
